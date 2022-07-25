@@ -17,6 +17,8 @@ The main variables employed in this project are the following:
 
 
 ---
+
+
 ## Value iteration
 In value iteration, we decided to first build the model (i.e., calculate all the transition probabilities in the Bellman equations) and then apply value iteration to solve it.
  
@@ -27,8 +29,9 @@ In value iteration, we decided to first build the model (i.e., calculate all the
  - `main.py`: contains some functions necessary for our value iteration algorithm.
 
 
-
 ---
+
+
 ## Policy iteration
 In our implementation of policy iteration, we calculate transition probabilities when needed (using an environment), instead of building the model at the beginning, as we did in our implementation of value iteration. This way, we avoid storing large data files containing the model, at the cost of some extra computation time.
 
@@ -40,17 +43,17 @@ In our implementation of policy iteration, we calculate transition probabilities
 
 
 ---
+
+
 ## Monte Carlo simulation
 We coded a Monte Carlo simulation to validate the expected delivery times obtained from the MDP. This simulation can also be used to estimate the probability distribution of the delivery time.
 
- - `main.py`: functions used to run a simulation of the repeater chain.
-
- - `main.py`: contains the main functions to run a simulation of the repeater chain. The function `simulate_environment()` can be called directly.
-
- - `policy.py` and `environment.py` are part of the policy iteration algorithm. These files are necessary to run `main.policy_iteration()`.
+ - `main.py`: contains `simulate_environment()`, which can run a simulation of the repeater chain. Examples can be found in `experiment_delivery-time-distribution.ipynb`.
 
 
 ---
+
+
 ## Data analysis and results
 The following files can be used to generate the results that appear in our paper. The data for these plots has to be generated independently using the scripts explained in the previous sections. Our data will be made public soon.
 
