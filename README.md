@@ -51,7 +51,7 @@ We coded a Monte Carlo simulation to validate the expected delivery times obtain
  - `main.py`: contains `simulate_environment()`, which can run a simulation of the repeater chain. Examples can be found in `experiment_delivery-time-distribution.ipynb`.
 
 
----
+
 
 
 ## Data analysis and results
