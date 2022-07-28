@@ -22,9 +22,9 @@ The main variables employed in this project are the following:
 ## Value iteration
 In value iteration, we decided to first build the model (i.e., calculate all the transition probabilities in the Bellman equations) and then apply value iteration to solve it.
  
- - `valueiter_build.py`: generates the model, while applying the state bunching technique (see our paper for more details). An example of how to use this script can be found in `run_value_iter_build.sh`, which takes as input specific values for `n` and `cutoff` (note that we do not need the values of `p` and `p_s` to build the model).
+ - `valueiter_build.py`: generates the model, while applying the state bunching technique (see our paper for more details). An example of how to use this script can be found in `run_valueiter_build.sh`, which takes as input specific values for `n` and `cutoff` (note that we do not need the values of `p` and `p_s` to build the model).
 
- - `valueiter_solve.py`: finds an optimal policy using value iteration. This can only be used after generating the model with `valueiter_build.py`. An example of how to use this script can be found in `run_value_iter_solve.sh`.
+ - `valueiter_solve.py`: finds an optimal policy using value iteration. This can only be used after generating the model with `valueiter_build.py`. An example of how to use this script can be found in `run_valueiter_solve.sh`.
 
  - `main.py`: contains some functions necessary for our value iteration algorithm.
 
@@ -35,7 +35,7 @@ In value iteration, we decided to first build the model (i.e., calculate all the
 ## Policy iteration
 In our implementation of policy iteration, we calculate transition probabilities when needed (using an environment), instead of building the model at the beginning, as we did in our implementation of value iteration. This way, we avoid storing large data files containing the model, at the cost of some extra computation time.
 
- - `policyiter_solve.py`: finds an optimal policy using policy iteration. An example of how to use this script can be found in `run_value_iter_solve.sh`.
+ - `policyiter_solve.py`: finds an optimal policy using policy iteration. An example of how to use this script can be found in `run_policyiter.sh`.
 
  - `main.py`: contains the main functions used to find optimal policies. The function `policy_iteration()` can also be called directly to find an optimal policy.
 
