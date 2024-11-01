@@ -1,7 +1,7 @@
-# optimal-homogeneous-chain-with-cutoffs
+# [arXiv:2207.06533] Optimal Entanglement Distribution Policies in Homogeneous Repeater Chains with Cutoffs
 
-Optimal entanglement distribution policies in homogeneous repeater chains with cutoffs.
 For a review of the mathemathical theory behind the code in this repo and analysis of the results, please see our paper ([arXiv:2207.06533](https://arxiv.org/abs/2207.06533)).
+Our paper was also published in [npj Quantum Information](https://www.nature.com/articles/s41534-023-00713-9).
 
 We formulate the problem of finding optimal policies as a Markov decision process (MDP), and we solve it using value and policy iteration (both methods are equivalent in terms of results). Next, we explain how to use our code to find optimal policies with value and policy iteration, and to perform a Monte Carlo simulation of a specific policy. We also provide the code used to derive the results shown in our paper.
 
